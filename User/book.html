@@ -1,0 +1,130 @@
+<html>
+<title>
+	Book a room
+</title>
+<body>
+<style type="text/css">
+body{
+background-image: url("src/book.jpg");
+background-size: cover;
+}
+.book{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 250px;
+	height: 400px;
+	margin: 10px auto;
+	margin-top:100px;
+	position:absolute;
+	left:60%;
+	padding: 15px;
+	background-image: url("blur.jpg");
+	border-radius: 30px;
+}
+.book h2{
+	background: #43D1AF;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300px;
+	text-align: center;
+	border-radius: 30px;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.book input[type="text"],
+.book input[type="date"],
+.book input[type="datetime"],
+.book input[type="email"],
+.book input[type="number"],
+.book input[type="search"],
+.book input[type="time"],
+.book input[type="url"],
+.book input[type="password"],
+.book textarea,
+.book select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+	border-radius: 30px;
+}
+.book input[type="text"]:focus,
+.book input[type="date"]:focus,
+.book input[type="datetime"]:focus,
+.book input[type="email"]:focus,
+.book input[type="number"]:focus,
+.book input[type="search"]:focus,
+.book input[type="time"]:focus,
+.book input[type="url"]:focus,
+.book input[type="password"]:focus,
+.book textarea:focus,
+.book select:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+	border: 1px solid #43D1AF;
+}
+
+.book input[type="submit"],
+.book input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #43D1AF;
+	border-bottom: 2px solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+	border-radius: 30px;
+}
+.book input[type="submit"]:hover,
+.book input[type="button"]:hover{
+	background: #2EBC99;
+}
+.header {
+  position:absolute;
+  left:10%;
+  margin-top:210px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight:300;
+  font-size:70px;
+  color:black;  
+}
+
+</style>
+<div class="header">
+	<i>JASP A Luxury<br/>Hotel<br/>Check Availabilty....</i>
+</div>
+<div class="book">
+<h2>Checking Availabilty</h2>
+<form action="book.jsp" method="get">
+<label for="checkin">Check in</label>
+<input type="date" name="date1"required />
+<label for="checkout">Check out</label>
+<input type="date" name="date2"required />
+<label for="rooms">Rooms</label>
+<select name="Rooms">
+ <option value="" selected disabled hidden>Rooms</option>
+  <option value="1">1 Room</option>
+  <option value="2">2 Rooms</option>
+  <option value="3">3 Rooms</option>
+</select>
+<input type="submit" value="Check Availabilty"/>
+</form>
+</div>
+</body>
+</html>

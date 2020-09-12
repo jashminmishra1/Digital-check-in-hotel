@@ -1,0 +1,105 @@
+<html>
+<title>
+	Login
+</title>
+<body>
+<style type="text/css">
+body{
+background-image: url("src/login.jpg");
+background-size: cover;
+}
+.login{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	margin-top:100px;
+	padding: 16px;
+	background-image: url("src/blur.jpg");
+	border-radius: 30px;
+}
+.login h1{
+	background: #43D1AF;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300px;
+	text-align: center;
+	border-radius: 30px;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.login input[type="text"],
+.login input[type="date"],
+.login input[type="datetime"],
+.login input[type="email"],
+.login input[type="number"],
+.login input[type="search"],
+.login input[type="time"],
+.login input[type="url"],
+.login input[type="password"],
+.login textarea,
+.login select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+	border-radius: 30px;
+}
+.login input[type="text"]:focus,
+.login input[type="date"]:focus,
+.login input[type="datetime"]:focus,
+.login input[type="email"]:focus,
+.login input[type="number"]:focus,
+.login input[type="search"]:focus,
+.login input[type="time"]:focus,
+.login input[type="url"]:focus,
+.login input[type="password"]:focus,
+.login textarea:focus,
+.login select:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+	border: 1px solid #43D1AF;
+}
+
+.login input[type="submit"],
+.login input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #43D1AF;
+	border-bottom: 2px solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+	border-radius: 30px;
+}
+.login input[type="submit"]:hover,
+.login input[type="button"]:hover{
+	background: #2EBC99;
+}
+</style>
+<div class="login">
+<h1>LOGIN</h1>
+<form action="log.jsp" method="POST">
+<input type="text" name="email" placeholder="Email" required />
+<input type="password" name="password" placeholder="Password" required />
+<input type="submit" value="LOGIN"/>
+</form>
+</div>
+</body>
+</html>

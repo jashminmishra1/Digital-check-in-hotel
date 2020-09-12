@@ -1,0 +1,108 @@
+<html>
+<title>
+	signup
+</title>
+<body>
+<style type="text/css">
+body{
+background-image: url("src/login.jpg");
+background-size: cover;
+}
+.signup{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	margin-top:100px;
+	padding: 16px;
+	background-image: url("src/blur.jpg");
+	border-radius: 30px;
+}
+.signup h1{
+	background: #43D1AF;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300px;
+	text-align: center;
+	border-radius: 30px;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.signup input[type="text"],
+.signup input[type="date"],
+.signup input[type="datetime"],
+.signup input[type="email"],
+.signup input[type="number"],
+.signup input[type="search"],
+.signup input[type="time"],
+.signup input[type="url"],
+.signup input[type="password"],
+.signup textarea,
+.signup select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+	border-radius: 30px;
+}
+.signup input[type="text"]:focus,
+.signup input[type="date"]:focus,
+.signup input[type="datetime"]:focus,
+.signup input[type="email"]:focus,
+.signup input[type="number"]:focus,
+.signup input[type="search"]:focus,
+.signup input[type="time"]:focus,
+.signup input[type="url"]:focus,
+.signup input[type="password"]:focus,
+.signup textarea:focus,
+.signup select:focus
+{
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+	border: 1px solid #43D1AF;
+}
+
+.signup input[type="submit"],
+.signup input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #43D1AF;
+	border-bottom: 2px solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+	border-radius: 30px;
+}
+.signup input[type="submit"]:hover,
+.signup input[type="button"]:hover{
+	background: #2EBC99;
+}
+</style>
+<div class="signup">
+<h1>SIGNUP</h1>
+<form action="reg.jsp" method="GET">
+<input type="text" name="email" placeholder="Email" required />
+<input type="text" name="phone" placeholder="Phone Number" required />
+
+<input type="password" name="password" placeholder="Password" required />
+<input type="password" name="password1" placeholder="Re-enter-password" required />
+<input type="submit" value="signup"/>
+</form>
+</div>
+</body>
+</html>
